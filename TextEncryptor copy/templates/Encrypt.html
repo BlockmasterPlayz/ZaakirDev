@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Text Encryptor</title>
+
+        <style>
+            .EncryptContainer {
+              text-align: center;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: darkgray;">
+        <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">{{ Result }}</h1>
+
+        <div class="EncryptContainer">
+            <form action="/Encrypt" method="POST">
+                <input type="text" name="TextToEncrypt">
+                <input type="number" name="key">
+                <button>Encrypt</button>
+            </form>
+        </div>
+
+        <form action="/Encrypt" method="GET"></form>
+
+    </body>
+</html>
